@@ -1,0 +1,807 @@
+*{
+    box-sizing: border-box;
+    margin-top: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* pour que le header soit collé au plafond */
+
+.barre{
+    width: 100%;
+    height: 80px;
+    background-color: #111111;
+    display: flex;
+    justify-content: start;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+/*.sousbarre{
+    width: 100%;
+    height: 2px;
+    background-color: #252525;
+    margin-top: 80px;
+    display: flex;
+    position: fixed;
+}*/
+
+/* barre */
+
+.logo{
+    height: 46px;
+    width: 68px;
+    background-image: url("images/logo_blanc.png");
+    background-size: 100%;
+    margin: 10px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.logo:hover{
+    background-image: url("images/logo_jaune.png");
+}
+
+/* logo */
+
+
+.outil{
+    margin-left: 10%;
+    margin-top: 20px;
+    background: #D62C57;
+    padding: 5px;
+    padding-left: 2%;
+    height: 40px;
+    width: 300px;
+    border-radius: 20px;
+}
+.rechercher{
+    font-family: "BBH Sans Bogle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 2%;
+    font-size: large;
+    background-color: #D62C57;
+    border: 0;
+}
+.rechercher::placeholder{
+    color: #111111;
+}
+.rechercher:focus{
+    outline: 0;
+}
+.rechercher:focus::placeholder{
+    opacity: 0.4;
+}
+
+/* barre de recherche */
+
+a,
+a:link,
+a:visited,
+a:active,
+a:focus {
+color: white;
+text-decoration: none;
+outline: none;
+}
+a:hover{
+    color: #C8AA6E;
+}
+
+/* forcer les liens (ouvrir) */
+
+.ouvrir{
+    color: white;
+    font-family: "BBH Sans Bogle", sans-serif;
+    font-weight: 400;
+    font-size: large;
+    font-style: normal;
+    letter-spacing: 2px;
+    margin-left: 10%;
+    margin-top: 10px;
+}
+.ouvrir:hover{
+    color: #C8AA6E;
+    transition: color 0.3s ease;
+}
+.collection:hover{
+    color: #C8AA6E;
+    transition: color 0.3s ease;
+}
+.echanges:hover{
+    color: #C8AA6E;
+    transition: color 0.3s ease;
+}
+.cartes:hover{
+    color: #C8AA6E;
+    transition: color 0.3s ease;
+}
+.collection{
+    color: white;
+    font-family: "BBH Sans Bogle", sans-serif;
+    font-weight: 400;
+    font-size: large;
+    font-style: normal;
+    letter-spacing: 2px;
+    margin-left: 10%;
+    margin-top: 10px;
+}
+.echanges{
+    color: white;
+    font-family: "BBH Sans Bogle", sans-serif;
+    font-weight: 400;
+    font-size: large;
+    font-style: normal;
+    letter-spacing: 2px;
+    margin-left: 10%;
+    margin-top: 10px;
+}
+.cartes{
+    color: white;
+    font-family: "BBH Sans Bogle", sans-serif;
+    font-weight: 400;
+    font-size: large;
+    font-style: normal;
+    letter-spacing: 2px;
+    margin-left: 10%;
+    margin-top: 10px;
+}
+
+.ou{
+    margin-top:20px;
+    margin-left: 220px;
+    border-radius: 10px;
+    height: 40px;
+    width: 75px;   
+}
+.co{
+    margin-top:20px;
+    margin-left: 1%;
+    border-radius: 10px;
+    height: 40px;
+    width: 120px;   
+}
+.ec{
+    margin-top:20px;
+    margin-left: 1%;
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+}
+.ca{
+    margin-top:20px;
+    margin-left: 1%;
+    border-radius: 10px;
+    height: 40px;
+    width: 70px;
+}
+.ou:hover{
+    background-color: #252525;
+    transition: all 0.5s ease;   
+}
+.co:hover{
+    background-color: #252525;
+    transition: all 0.5s ease;  
+}
+.ec:hover{
+    background-color: #252525;
+    transition: all 0.5s ease;
+}
+.ca:hover{
+    background-color: #252525;
+    transition: all 0.5s ease;
+}
+
+/* categories */
+
+.connecter{
+    background-color:#D62C57;
+    height: 50px;
+    width: 300px;
+    margin-left: 2%;
+    margin-top: 14px;
+    font-family: "BBH Sans Bogle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #111111;
+    border-radius: 20px;
+    font-size: large;
+    letter-spacing: 2px;
+}
+.sinscrire:hover{
+    color: #C8AA6E;
+    transition: color 0.3s ease;
+}
+.sinscrire{
+    margin-left: 13%;
+    margin-top: 4%;
+}
+
+/* bouton se connecter */
+
+.haut{
+    margin-top: 10%;
+    background-image: url("images/rose.png");
+    margin-top: 0;
+    width: 100%;
+    height: 615px;
+}
+.autre{
+    background-color: #D62C57;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+.un{
+    margin-top: 50px;
+    height: 400px;
+    width: 400px;
+    background-image: url("images/fiora.png");
+    background-size: 100%
+}
+.deux{
+    margin-top: 50px;
+    height: 400px;
+    width: 400px;
+    background-image: url("images/booster.png");
+    background-size: 100%
+}
+.trois{
+    margin-top: 50px;
+    height: 400px;
+    width: 400px;
+    background-image: url("images/rumble.png");
+    background-size: 100%
+}
+.un:hover{
+    height: 450px;
+    width: 450px;
+    transition: all 0.5s ease;
+}.deux:hover{
+    height: 450px;
+    width: 450px;
+    transition: all 0.5s ease;
+}.trois:hover{
+    height: 450px;
+    width: 450px;
+    transition: all 0.5s ease;
+}
+
+/* fond + 3 cartes */
+
+.titre{
+    background-color: #D62C57;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    gap: 21%;
+}
+.titreun{
+    color: white;
+    font-family: "BBH Sans Bogle", sans-serif;
+    font-weight: 400;
+    font-size: xx-large;
+    font-style: normal;
+    letter-spacing: 2px;
+    margin-top: 130px;
+}
+.titredeux{
+    color: white;
+    font-family: "BBH Sans Bogle", sans-serif;
+    font-weight: 400;
+    font-size: xx-large;
+    font-style: normal;
+    letter-spacing: 2px;
+    margin-top: 130px;
+}
+.titretrois{
+    color: white;
+    font-family: "BBH Sans Bogle", sans-serif;
+    font-weight: 400;
+    font-size: xx-large;
+    font-style: normal;
+    letter-spacing: 2px;
+    margin-top: 130px;
+}
+.ecriture{
+    background-color: #D62C57;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 300px;
+    gap: 3%;
+}
+.sousun{
+    width: 450px;
+    color: #111111;
+    font-family: "BBH Sans Bogle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+    margin-top: 150px;
+    text-align: center;
+}
+.sousdeux{
+    width: 450px;
+    color: #111111;
+    font-family: "BBH Sans Bogle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+    margin-top: 150px;
+    text-align: center;
+}
+.soustrois{
+    width: 450px;
+    color: #111111;
+    font-family: "BBH Sans Bogle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+    margin-top: 150px;
+    text-align: center;
+}
+
+/* titre + infos des 3 cartes */
+
+.nouvelle{
+    width: 100%;
+    height: 750px;
+    background-image: url("images/st1.png");
+    background-position: 50%;
+    margin-top: 0%;
+}
+.dessous{
+    display: flex;
+    justify-content: center;
+}
+.quatre{
+    height: 363px;
+    width: 800px;
+    margin-top: 7%;
+    margin-left: 3%;
+    background-image: url("images/yas.png");
+    background-size: 100%
+}
+.cinq{
+    height: 350px;
+    width: 800px;
+    margin-top: 7%;
+    margin-left: 3%;
+    background-image: url("images/mf.png");
+    background-size: 100%;
+}
+.six{
+    height: 350px;
+    width: 800px;
+    margin-top: 7%;
+    background-image: url("images/kaisa.png");
+    background-size: 100%;
+}
+.sept{
+    height: 363px;
+    width: 800px;
+    margin-right: 3%;
+    margin-top: 7%;
+    margin-left: 3%;
+    background-image: url("images/teemo.png");
+    background-size: 100%;
+}
+
+/* fond + 4 cartes */
+
+.ecriture2{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    gap: 6%;
+}
+.carte1{
+    width: 300px;
+    color: #111111;
+    font-family: "BBH Sans Bogle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+    margin-top: 50px;
+    text-align: center;
+}
+.carte2{
+    width: 300px;
+    color: #111111;
+    font-family: "BBH Sans Bogle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+    margin-top: 50px;
+    text-align: center;
+}
+.carte3{
+    width: 300px;
+    color: #111111;
+    font-family: "BBH Sans Bogle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+    margin-top: 50px;
+    text-align: center;
+}
+.carte4{
+    width: 300px;
+    color: #111111;
+    font-family: "BBH Sans Bogle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* infos des 4 cartes */
+
+/*.surbarre2{
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+.surbarre{
+    width: 100%;
+    height: 2px;
+    background-color: #303030;
+}
+
+/* petit traits sur la barre du bas */
+
+.barreclair{
+    width: 100%;
+    height: 80px;
+    background-color: #252525;
+    justify-content: center;
+    display: flex;
+}
+.apropos{
+    color: white;
+    font-family: "BBH Sans Bogle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    margin-left: 5%;
+}
+.aide{
+    color: white;
+    font-family: "BBH Sans Bogle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    margin-left: 5%;
+}
+.etat{
+    color: white;
+    font-family: "BBH Sans Bogle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    margin-left: 5%;
+}
+.support{
+    color: white;
+    font-family: "BBH Sans Bogle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    margin-left: 5%;
+}
+.site{
+    color: white;
+    font-family: "BBH Sans Bogle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    margin-left: 5%;
+}
+.telecharge{
+    color: white;
+    font-family: "BBH Sans Bogle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    margin-left: 5%;
+}
+.apropos:hover{
+    color: #C8AA6E;
+    transition: color 0.3s ease;
+}
+.aide:hover{
+    color: #C8AA6E;
+    transition: color 0.3s ease;
+}
+.etat:hover{
+    color: #C8AA6E;
+    transition: color 0.3s ease;
+}
+.support:hover{
+    color: #C8AA6E;
+    transition: color 0.3s ease;
+}
+.site:hover{
+    color: #C8AA6E;
+    transition: color 0.3s ease;
+}
+.telecharge:hover{
+    color: #C8AA6E;
+    transition: color 0.3s ease;
+}
+.ap{
+    margin-top:20px;
+    border-radius: 10px;
+    height: 40px;
+    width: 265px;   
+}
+.ai{
+    margin-top:20px;
+    margin-left: 1%;
+    border-radius: 10px;
+    height: 40px;
+    width: 250px;
+}
+.et{
+    margin-top:20px;
+    margin-left: 1%;
+    border-radius: 10px;
+    height: 40px;
+    width: 135px;
+}
+.su{
+    margin-top:20px;
+    margin-left: 1%;
+    border-radius: 10px;
+    height: 40px;
+    width: 70px;
+}
+.si{
+    margin-top:20px;
+    margin-left: 1%;
+    border-radius: 10px;
+    height: 40px;
+    width: 145px;
+}
+.te{
+    margin-top:20px;
+    margin-left: 1%;
+    border-radius: 10px;
+    height: 40px;
+    width: 380px;
+}
+.ap:hover{
+   background-color: #303030;
+         transition: all 0.5s ease;  
+}
+.ai:hover{
+    background-color: #303030;
+         transition: all 0.5s ease;
+}
+.et:hover{
+    background-color: #303030;
+        transition: all 0.5s ease;
+}
+.su:hover{
+    background-color: #303030;
+        transition: all 0.5s ease;
+}
+.si:hover{
+    background-color: #303030;
+        transition: all 0.5s ease;
+}
+.te:hover{
+    background-color: #303030;
+        transition: all 0.5s ease;
+}
+
+/* barre claire */
+
+.barre2{
+    width: 100%;
+    height: 60px;
+    background-color: #111111;
+    display: flex;
+    justify-content: center;
+    gap:10px;
+}
+.youtube{
+    margin-top: 30px;
+    background-image: url("images/youtube.png");
+    height: 35px;
+    width: 35px;
+    background-size: 100%;
+    background-color: #252525;
+    border-radius: 40%;
+    border: 7px solid #252525;
+}
+.xx{
+    margin-top: 30px;
+    background-image: url("images/twitter.png");
+    height: 35px;
+    width: 35px;
+    background-size: 100%;
+    background-color: #252525;
+    border-radius: 40%;
+    border: 7px solid #252525;
+}
+.facebook{
+    margin-top: 30px;
+    background-image: url("images/facebook.png");
+    height: 35px;
+    width: 35px;
+    background-size: 100%;
+    background-color: #252525;
+    border-radius: 40%;
+    border: 7px solid #252525;
+}
+.insta{
+    margin-top: 30px;
+    background-image: url("images/insta.png");
+    height: 35px;
+    width: 35px;
+    background-size: 100%;
+    background-color: #252525;
+    border-radius: 40%;
+    border: 7px solid #252525;
+}
+.discord{
+    margin-top: 30px;
+    background-image: url("images/discord.png");
+    height: 35px;
+    width: 35px;
+    background-size: 100%;
+    background-color: #252525;
+    border-radius: 40%;
+    border: 7px solid #252525;
+}
+
+/* reseaux */
+
+.barresuite{
+    height: 100px;
+    width: 100%;
+    background-color: #111111;
+    display: flex;
+    justify-content: center;
+}
+.logo2{
+    height: 43px;
+    width: 68px;
+    background-image: url("images/logo_gris.png");
+    background-size: 100%;
+    margin-top: 30px;
+}
+.logo2:hover{
+    background-image: url("images/logo_blanc.png");
+}
+
+/* logo du bas */
+
+.barred{
+    height: 80px;
+    width: 100%;
+    background-color: #111111;
+    display: flex;
+    justify-content: center;
+}
+.inc{
+    color: #686868;
+    font-family: "BBH Sans Bogle", sans-serif;
+    font-style: normal;
+    font-size: smaller;
+    letter-spacing: 2px;
+    width: 800px;
+    text-align: center;
+}
+
+/* phrase inc */
+
+.whitemode{
+    background-image: url("images/soleil.png");
+    height: 50px;
+    width: 50px;
+    background-size: 100%;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.lune {
+    background-image: url("images/lune.png");
+}
+
+/* bouton lightmode */ 
+
+.contour:hover{
+    background-color: rgb(97, 207, 255);
+}
+.contourinverse:hover{
+    background-color: rgb(0, 179, 255);
+}
+
+/* contour des mots avec opacité quand pointer */
+
+.bleu{  
+    background-color: rgb(0, 179, 255);
+}
+.blanc{
+    background-color: white;
+}
+.noir{
+    color: #252525;
+}
+
+/* couleurs lightmode */
+
+.new1{
+    background-image: url("images/new1.png");
+}
+.new2{
+    background-image: url("images/new2.png");
+}
+
+/* images de fond */
+
+.logojv{
+    background-image: url("images/logo_blanc.png");
+}
+.logojv:hover{
+    background-image: url("images/logo_jaune.png");
+}
+.logoclair{
+    background-color: rgb(97, 207, 255);
+    border: 7px solid rgb(97, 207, 255);
+}
+
+/* richard games footer et reseaux */
+
+.burger {
+    background-image: url("images/burger.png");
+    height: 30px;
+    width: 30px;
+    background-size: 100%;
+    margin-top: 25px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+/* burger */
+
+.yas {
+    position: absolute;
+    background-color: #303030;
+    height: 300px;
+    width: 700px;
+    margin-top: 80px;
+    margin-left: 170px;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+    opacity: 0;
+    transform: translateY(-300px);
+    transition: transform 1s ease, opacity 0.5s ease;
+    z-index: 1;
+}
+
+.yas.visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* tab */
+
+.bleuclair {
+    background-color: rgb(97, 207, 255);
+}
+
+/* derniere couleur */
